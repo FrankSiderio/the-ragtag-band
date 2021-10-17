@@ -56,20 +56,7 @@ a:hover {
   animation: theragtagband 1s linear infinite;
   animation-direction: alternate;
 }
-@keyframes theragtagband {
-  from {
-    transform: rotate(5deg);
-  }
-  to {
-    transform: rotate(-5deg);
-  }
-}
-.navbar-brand:hover {
-  box-shadow: 10px 10px 5px #ccc;
-  -moz-box-shadow: 10px 10px 5px #ccc;
-  -webkit-box-shadow: 10px 10px 5px #ccc;
-  -khtml-box-shadow: 10px 10px 5px #ccc;
-}
+
 
 .nav-item a {
   color: #ffff !important;
@@ -116,14 +103,14 @@ p {
 
 .header-buttons a:hover {
   color: #50d1c0;
-  background-color: #fff;
+  background-color: black;
   text-decoration: none;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 .center-div p {
   font-size: 1.3rem;
   padding: 10px 0 20px 0;
-  color: #fff;
+  color: black;
 }
 .kl {
   padding: 10px 45px;
@@ -159,7 +146,7 @@ p {
   word-spacing: 4px;
 }
 .extra-div {
-  background-color: #fff;
+  background-color: black;
   border: medium none;
   padding: 50px !important;
   border-radius: 3px;
@@ -318,16 +305,18 @@ p {
   color: white;
 }
 .er {
-  background-image: url("../images/p4.jpg");
+  background-image: url("../images/");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: black;
 }
 .ljd {
-  background-image: url("../images/p3.jpg");
+  background-image: url("../images/");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: black;
 }
 .policy h2,
 h3 {
@@ -341,10 +330,11 @@ h3 {
   background-attachment: fixed;
 }
 #fg {
-  background-image: url("../images/p9.jpg");
+  background-image: url("../images/");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: black;
 }
 .bv {
   padding: 5px;
@@ -358,10 +348,11 @@ h3 {
   margin: 5px;
 }
 #pz {
-  background-image: url("../images/p11.jpg");
+  background-image: url("../images/");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: black;
 }
 #nm:hover {
   background-color: #06d6a0;

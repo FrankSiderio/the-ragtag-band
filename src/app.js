@@ -4,7 +4,7 @@ const path=require('path');
 const ResultData=require("./models/result");
 const hbs=require('hbs');
 const bcrypt=require("bcryptjs");
-const DATA=require("./models/candidiate");
+const DATA=require("./models/candidate");
 const LoginInfo=require("./models/admin");
 const jwt=require("jsonwebtoken");
 var nodemailer=require("nodemailer");
@@ -40,7 +40,7 @@ app.get("/login",(req,res)=>{
   res.render("login")
 })
 app.post("/newsletter",(req,res)=>{
-  // email database of candidiates..
+  // email database of candidates..
 })
 app.get("/register",(req,res)=>{
   res.render("register")
@@ -87,9 +87,9 @@ app.post("/apply",async (req,res)=>{
     endrose_group:group,
     Twitter:twitter,
     date_of_election:req.body.elecdate,
-    candidiate_biography:req.body.biography,
+    candidate_biography:req.body.biography,
     campaign_website:req.body.campweb,
-    feedback_of_candidiate:req.body.ec26,
+    feedback_of_candidate:req.body.ec26,
     MMT:req.body.ec133,
    ans1:req.body.race,
    ans2:req.body.race1,
@@ -688,8 +688,8 @@ const fr=await rd.save();
 var mailoptions={
   from:"noreplyragtagband@gmail.com",
   to:"theragtagband@protonmail.com",
-  subject:"candidiate answer average result ",
-  text: " Candidiate Name: "+user.Name+ "\n Year to run: "+user.Year+" \n Email: "+user.Email+" \n State: "+user.State+" Level: "+user.Level+" \n position: "+user.Position+" \n Twitter acc: "+user.Twitter+" \n result average: "+calc
+  subject:"candidate answer average result ",
+  text: " Candidate Name: "+user.Name+ "\n Year to run: "+user.Year+" \n Email: "+user.Email+" \n State: "+user.State+" Level: "+user.Level+" \n position: "+user.Position+" \n Twitter acc: "+user.Twitter+" \n result average: "+calc
 }
 transport.sendMail(mailoptions,function(error,info){
   if(error){
@@ -767,10 +767,10 @@ app.post("/records",async (req,res)=>{
 app.get("/userdata",(req,res)=>{
   res.render("userdata")
 })
-app.get("/candidiate",async(req,res)=>{
+app.get("/candidate",async(req,res)=>{
   try{
   const resultsss= await ResultData.find();
-  res.render("candidiate",{resultsss})
+  res.render("candidate",{resultsss})
   
 
  // console.log(ssaa)
@@ -778,7 +778,7 @@ app.get("/candidiate",async(req,res)=>{
   console.log(err)
 }
 })
-app.post("/candidiate",async(req,res)=>{
+app.post("/candidate",async(req,res)=>{
   try{
     const daa=req.body.uemmm;
     // const daa=JSON.stringify(da);

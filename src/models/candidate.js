@@ -39,13 +39,13 @@ type:String
  date_of_election:{
      type:String
  },
- candidiate_biography:{
+ candidate_biography:{
      type:String
  },
  campaign_website:{
      type:String
  },
- feedback_of_candidiate:{
+ feedback_of_candidate:{
      type:String
  },
  MMT:{

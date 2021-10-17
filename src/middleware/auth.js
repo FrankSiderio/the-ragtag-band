@@ -1,5 +1,5 @@
 const jwt=require("jsonwebtoken");
-const DATA=require("../models/candidiate");
+const DATA=require("../models/candidate");
 
 //JWT USER AUTHENTICATION PAGE 
 
